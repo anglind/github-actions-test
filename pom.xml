@@ -12,7 +12,6 @@
     <properties>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.source>11</maven.compiler.source>
-        <connectionUrl>scm:git:ssh://github.com/anglind/github-actions-test</connectionUrl>
     </properties>
 
     <scm>
@@ -66,6 +65,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
+                    <connectionUrl>${scm.url}</connectionUrl>
                 </configuration>
             </plugin>
         </plugins>
