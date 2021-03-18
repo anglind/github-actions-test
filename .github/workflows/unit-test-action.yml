@@ -14,3 +14,5 @@ jobs:
           java-version: 11
       - name: Maven Compile
         run: mvn compile
+      - name: Run tests
+        run: mvn test
