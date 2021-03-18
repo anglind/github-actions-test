@@ -16,6 +16,8 @@ jobs:
         run: mvn compile
       - name: Run tests
         run: mvn test
+      - name: Build Jar
+        run: mvn package
       - name: Store Artifact
         uses: actions/upload-artifact@v2
         with:
