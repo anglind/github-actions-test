@@ -1,9 +1,6 @@
 name: Create release
 on:
   workflow_dispatch:
-    inputs:
-      tags:
-        description: 'Release'
 
 jobs:
   CreateRelease:
@@ -16,5 +13,9 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+      - name: Configure Git user
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
       - name: Maven Release
         run: mvn -B validate release:branch release:perform
