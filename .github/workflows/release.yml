@@ -17,4 +17,4 @@ jobs:
         with:
           java-version: 11
       - name: Maven Release
-        run: mvn -B validate release:branch release:perform -DdryRun=true
+        run: mvn -B validate release:branch release:perform

@@ -16,8 +16,8 @@
 
     <scm>
         <url>scm:git:ssh://github.com/anglind/github-actions-test</url>
-        <connection>${scm.url}</connection>
-        <developerConnection>${scm.url}</developerConnection>
+        <connection>${project.scm.url}</connection>
+        <developerConnection>${project.scm.url}</developerConnection>
     </scm>
 
     <dependencies>
@@ -45,7 +45,7 @@
     </dependencies>
 
     <build>
-        <finalName>${artifactId}</finalName>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -63,6 +63,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -78,7 +79,7 @@
                 <version>3.0.0-M1</version>
                 <configuration>
                     <branchName>release/${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</branchName>
-                    <connectionUrl>${scm.url}</connectionUrl>
+                    <connectionUrl>${project.scm.url}</connectionUrl>
                 </configuration>
             </plugin>
         </plugins>
