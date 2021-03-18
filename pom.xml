@@ -12,7 +12,7 @@
     </properties>
 
     <scm>
-        <url>scm:git:https://github.com/anglind/github-actions-test</url>
+        <url>scm:git:https://github.com/anglind/github-actions-test.git</url>
         <connection>${project.scm.url}</connection>
         <developerConnection>${project.scm.url}</developerConnection>
       <tag>HEAD</tag>
