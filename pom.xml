@@ -58,9 +58,6 @@
                         <goals>
                             <goal>parse-version</goal>
                         </goals>
-                        <configuration>
-                            <propertyPrefix>versions</propertyPrefix>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -81,7 +78,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
-                    <branchName>release/${versions.majorVersion}.${versions.minorVersion}.${versions.incrementalVersion}</branchName>
+                    <branchName>release/${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</branchName>
                     <connectionUrl>${scm.url}</connectionUrl>
                 </configuration>
             </plugin>
