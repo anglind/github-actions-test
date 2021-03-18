@@ -12,6 +12,7 @@
     <properties>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.source>11</maven.compiler.source>
+        <connectionUrl>scm:git:ssh://github.com/anglind/github-actions-test</connectionUrl>
     </properties>
 
     <scm>
@@ -37,6 +38,11 @@
             <groupId>org.codehaus.plexus</groupId>
             <artifactId>plexus-utils</artifactId>
             <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>3.0.0-M1</version>
         </dependency>
     </dependencies>
 
