@@ -15,6 +15,7 @@
     </properties>
 
     <scm>
+        <url>scm:git:ssh://github.com/anglind/github-actions-test</url>
         <developerConnection>scm:git:ssh://github.com/anglind/github-actions-test</developerConnection>
     </scm>
 
