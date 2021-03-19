@@ -15,7 +15,7 @@
         <url>scm:git:https://github.com/anglind/github-actions-test.git</url>
         <connection>${project.scm.url}</connection>
         <developerConnection>${project.scm.url}</developerConnection>
-      <tag>HEAD</tag>
+      <tag>release/${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</tag>
   </scm>
 
     <dependencies>
